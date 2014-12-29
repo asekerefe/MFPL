@@ -1,0 +1,36 @@
+start
+	declare a as int;
+	incase (a equals 1) or (3 equals (1+2))
+		count from 0 to 10 perform
+			a <- a + 5;
+		nocount;
+	otherwise
+		declare nothing as float;
+	nocase;
+
+	declare x as str;
+	x <- "teststr";
+	declare b as int;
+	print "print" "expression" 100+2 * 4;
+	print "print" "valueof" "a" a;
+
+	a <- 101 - 1;
+	b <- 100  * a; 
+
+	incase a equals b
+		print "a" "is" "equal" "to" "b";
+	nocase;
+
+	print "minusop" (100 - 500 * 2);
+	
+	declare counter as int;
+	counter <- 0;
+	doforever if a equals 0
+		counter <- counter + 1;
+		incase counter equals 10
+			a <- 1;
+		nocase;
+		print "counting" counter;
+	noforever;
+
+terminate
